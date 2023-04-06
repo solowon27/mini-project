@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact form</h1> 
+    <ul>
+        <li id="form-provider">Date</li>
+        <li><a href="#contact-form">contact</li>
+        <li id="github"><a href="https://github.com/solowon27">Github</a></li>
+    </ul>
+    </header>
+    <section id="contact-image">
+        <img src="contacts.png" alt="contacts picture loads here">
+    </section>
+    <section class="contact" id="contact-form">
+        <h3>Enter your contact information below here:</h3>
+        <form action="contact.php" method="post">
+            <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Enter your First name" required>
+           <br> <label for="name"></label>
+            <input type="text" name="name" id="name" placeholder="Enter your Last name" required>
+         
+           <label for="Gender"></label>
+           <input type="checkbox" name="Male" id="gender">male
+           <input type="checkbox" name="Feale" id="gender">female
+           <input type="checkbox" name="pass" id="gender"> pass
+           <br> 
+            <label for="email"></label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+           <br> <label for="phone-number"></label>
+            <input type="text" id="phone-number"  placeholder="Enter your phone number" required>
+            <button type="submit">submit</button>
+        </form>
+    </section>
+    <footer>    
+    <ul>
+        <li id="form-provider">provider name [solomon Tegegne]</li>
+        <li id="email">Email:<a href="mailto:solowon27@hotmail.com">solowon27@hotmail.com</li>
+        <li id="github"><a href="https://github.com/solowon27">Github</a></li>
+    </ul>
+</footer>
+</body>
+</html>
