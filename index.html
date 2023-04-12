@@ -5,15 +5,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <section id="header"><!--this is a semantic HTML which is header section-->
         <h1>Contact form</h1> 
-    <ul>
-        <li id="form-provider">Date</li>
-        <li><a href="#contact-form">contact</li>
-        <li id="github"><a href="https://github.com/solowon27">Github</a></li>
-    </ul>
-    </header>
-    <section id="contact-image">
+        <ul>
+            <li id="form-provider">Date</li>
+            <li><a href="#contact-form">contact</a></li>
+            <li id="github"><a href="https://github.com/solowon27">Github</a></li> <!--this is a through page link which create a link inside one page and when you click it you might no see see any visible difference inside the page but you can see it in the address bar-->
+        </ul>
+    </section>
+    
+    <section id="contact-image"> <!-- this is the image section -->
         <img src="contacts.png" alt="contacts picture loads here">
     </section>
     <section class="contact" id="contact-form">
@@ -30,10 +31,10 @@
            <input type="checkbox" name="pass" id="gender"> pass
            <br> 
             <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            <input type="email" name="email" id="email" placeholder="someone@example.com" required>
            <br> <label for="phone-number"></label>
-            <input type="text" id="phone-number"  placeholder="Enter your phone number" required>
-            <button type="submit">submit</button>
+            <input type="text" id="phone-number"  placeholder="ph# 000-000-0000" required>
+           <input type="submit" value="submit">
         </form>
     </section>
     <footer>    
@@ -42,6 +43,7 @@
         <li id="email">Email:<a href="mailto:solowon27@hotmail.com">solowon27@hotmail.com</li>
         <li id="github"><a href="https://github.com/solowon27">Github</a></li>
     </ul>
+
 </footer>
 </body>
 </html>
