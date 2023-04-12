@@ -1,30 +1,35 @@
-body {
-    background-color: #f0f0f0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+* {
+   margin-left: 10px;  /*this is the universal selector which make entire page 
+   starts margin 10px from the left*/
 }
-header {
-    background: rgb(65, 61, 61);
+body { 
+    background-color: #292525;
+    font-family: system-ui; /*here in this section we define all font-family to be system-ui  */
+}
+#header {
+    background: rgb(66, 66, 66);
     color: white;
-    margin-left: 5px;
+    margin-top: 30px;
     padding-left: 5px;
     width : 100%;
+    height: 70px;
     position: fixed;
 }
-footer {
+footer, li{
     background: rgb(65, 61, 61);
     color: white;
-    margin-top: 20px; // 20px is the space between the footer and the last content of the main page
-    padding: 5px;
+    margin-top: 20px;
+    padding: auto;
     text-align: center;
 }
 img {
     width: 100px;
     height: 100px;
-    margin: 10px 0 ;
-    padding-top: 130px;
+    padding-top: 105px;
     position: static;
 }
-h3 {
+h3 {             /*this is one of element selector which select the all h3's and 
+    apply a text-decoration underlined and so on*/
     text-decoration: underline;
     color: rgb(12, 54, 82);
     margin-left: 10px;
@@ -35,8 +40,7 @@ input {
 .contact {
     background-color: rgb(161, 161, 190);
     border: 2px solid black;
-    display: block;
-
+   
 }
 button {
     margin: 0 0 0 5px;
@@ -56,3 +60,19 @@ ul {
     display: inline;
     text-align: center;
 }
+label{
+    display: block;
+    margin-top: 5px;
+}
+input:valid {
+   
+    border: none;
+    outline:1px solid rgb(14, 226, 156); // define the color of the border valid inputs 
+    accent-color: rgb(255, 51, 0); // define the color of the checkbox when it is checked
+    }
+input:invalid {
+      border: none;
+    outline:1px solid rgb(255, 51, 0); // define the color of the border invalid inputs 
+    }
+    border-radius: 5px; // define the border radius(curvature)
+    }
